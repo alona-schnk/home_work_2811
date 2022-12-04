@@ -16,7 +16,7 @@ print(("*\t\t\t\t   *"), (" *  *  *  *  * "), ("    *  *  *"), ("\t*\t\t*"), ("*
 print("\n\n\n")
 
 print("Escape sequences")
-print("\\a\t\t Bell (alert)")
+print("\\a\t\tBell (alert)")
 print("\\b\t\tBackspace")
 print("\\n\t\tNew line")
 print("\\t\t\tHorizontal tab")

@@ -1,6 +1,5 @@
-import antigravity
-import __hello__
-#from __future__ import braces
+
+print("import antigravity \n__hello__ \nfrom __future__ import braces\n\n")
 
 
 print(("\t\t **" ), ("\t\t  *"), ("\t\t\t\t *  *  *  "), ("\t*\t\t*"), ("\t       **" ))
@@ -13,7 +12,7 @@ print(("  *\t\t\t\t *"), ("   *"), ("\t\t\t   *\t\t *"), ("\t*\t  * *"), ("  *\t
 print((" *\t\t\t\t  *"), ("  *"), ("\t\t\t   *\t\t *"), ("\t*\t   **"), (" *\t\t\t\t*"))
 print(("*\t\t\t\t   *"), (" *  *  *  *  * "), ("    *  *  *"), ("\t*\t\t*"), ("*\t\t\t\t\t *"))
 
-print("\n\n\n")
+print("\n\n")
 
 print("Escape sequences")
 print("\\a\t\tBell (alert)")

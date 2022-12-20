@@ -6,14 +6,16 @@ for i in my_string:
         if i == "0":
             print(int(j), end=" ")
             continue
+        if i == "5" and j =="0" :
+            print("\n")
         print(int(i), int(j), sep="", end=" ")
 
 print("\n")
 
 #task2
 def trigonimetria():
-    high = int(input("Введіть висоту: "))
-    if high > 3 and high % 2 != 0:
+    high: int = int(input("Введіть висоту: "))
+    if high >= 3 and high % 2 != 0:
     #A
         for i in range(high-1):
             for j in range(2 * high + 1):

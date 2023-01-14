@@ -1,6 +1,6 @@
 print("Завдання №1")
 persons = [
-    {'name':'Dan', 'age':16},
+    {'name': 'Dan', 'age':16},
     {'name':'Jon', 'age':22},
     {'name':'Filip', 'age':18},
     {'name':'Milan', 'age':17},
@@ -70,7 +70,7 @@ for i in my_dict1:
     if i not in my_dict2:
         my_dict_kay4[i] = my_dict1[i]
     else:
-        my_dict_kay4[i] = my_dict1[i], my_dict2[i]
+        my_dict_kay4[i] = [my_dict1[i], my_dict2[i]]
 for i in my_dict2:
     if i not in my_dict1:
         my_dict_kay4[i] = my_dict2[i]

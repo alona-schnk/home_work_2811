@@ -1,24 +1,60 @@
-class Family:
-     persona = str()
-     name = str()
-     age = int()
+class Person:
+    """
+    Клас описує людину
+    """
+    __person = str()
+    __firstname = str()
+    __lastname = str()
+    __age = int()
 
-     def __init__(self, persona: str, name: str, age: int):
-         self.persona = persona
-         self.name = name
-         self.set_age(age)
 
-     def __str__(self):
-         return f'Persona: {self.persona}, Name: {self.name}, Age: {self.age}'
 
-     def set_age(self, age: int):
-         if age >= 0:
-             self.age = age
-         else:
-             self.age = 0
+    @property
+    def person(self):
+        return self.__person
+    
+    @property
+    def name(self):
+        return self.__firstname
 
-obj = Family('Mother', 'Alla', 34)
-obj.set_age(-23)
-print(obj)
+    @property
+    def last_name(self):
+        return self.__lastname
+
+    @property
+    def age(self):
+        return self.__age
+
+
+    def __init__(self, person: str, name: str, lastname: str, age: int):
+        self.__person = person
+        self.__firstname = name
+        self.__lastname = lastname
+        self.__age = age
+
+
+
+class Family(Person):
+
+    __father = dict()
+    __mother = dict()
+    __children = list()
+
+    def __init__(self):
+        self.list_hello = str
+        self.__father = Person("Батько", input("Введіть імя батька : "), input("Ведіть його прізвище: "), \
+                               input("Скільки йому років: "))
+        self.__mother = Person("Мати", input("Введіть імя мами: "), input("Ведіть її прізвище: "), \
+                               input("Скільки їй років: "))
+        children = input("Чи є в сім'ї діти? y/n: ")
+        if children == "y":
+            self.__child = Person("Дитина", input("Введіть імя дитини: "), input("Ведіть її прізвище: "), \
+                                  input("Скільки їй років: "))
+
+
+
+pers = Family()
+pers.__init__()
+
 
 

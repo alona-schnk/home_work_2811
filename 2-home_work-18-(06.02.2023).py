@@ -1,4 +1,7 @@
 class Zoo:
+    """
+    Клас описує тварину
+    """
     name_vida = str()
     weight = int()
     speed = int()
@@ -19,6 +22,9 @@ class Zoo:
 
 
 class Birds(Zoo):
+    """
+    Клас описує птахів
+    """
 
     def __init__(self,  characteristic_features: str):
         self.charac_feature = characteristic_features
@@ -44,6 +50,9 @@ class Albatross(Birds, Zoo):
 
 
 class Mammals(Zoo):
+    """
+    Клас описує ссавців
+    """
 
     def __init__(self,  sounds: str):
         self.sounds = sounds
@@ -67,6 +76,10 @@ class Wolf(Mammals, Zoo):
         print(self.number)
 
 class Reptiles(Zoo):
+    """
+    Клас описує рептилій
+    """
+
     def __init__(self, poison: str):
         self.poison = poison
 

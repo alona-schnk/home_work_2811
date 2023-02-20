@@ -1,4 +1,7 @@
 class Transport:
+    """
+    Клас описує транспорт
+    """
     number = "Номер не задано"
     num_wheels = 4
     engine_power = 90
@@ -21,6 +24,9 @@ class Transport:
         print(f"Максимальна швидкість {max_speed}")
 
 class Velosiped(Transport):
+    """
+    Клас описує двоколісний транспорт
+    """
     kind = "Велосипед"
     brand = "SportLife"
     def __init__(self, kind: str, brand: str):
@@ -32,6 +38,9 @@ class Motto(Velosiped, Transport):
 
 
 class Avto(Transport):
+    """
+    Клас описує автомобілі
+    """
     kind = "Легкова"
     brand = "BMW"
     body_type = "Седан"
@@ -55,6 +64,9 @@ class Gruz(Avto, Transport):
 
 
 class Bus(Transport):
+    """
+    Клас описує автобуси
+    """
     def __init__(self, kind: str, brand: str):
         self.kind_bus = kind
         self.brand = brand
